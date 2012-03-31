@@ -1,0 +1,13 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /Stedentripper/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Stedentripper/index.php [L]
+</IfModule>
+
+# END WordPress
+
+redirect 301 /groot-brittannie/dublin/ http://www.stedentripper.com/overig/dublin/ 
